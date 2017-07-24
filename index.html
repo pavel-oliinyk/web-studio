@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 </head>
-<body>
+<body onload="hideloader()">
 <div class="header">
 	<div class="container-fluid">
 		<div class="row">
@@ -76,7 +76,7 @@
 				<p>и сроки на зарзработку вашего проекта</p>
 				<p>за 30 минут</p>
 			</div>
-			<a href="#" class="get-info-hd wow bounceIn" data-wow-delay="0.5s">узнать стоимость сайта</a>
+			<a href="#"  class="get-info-hd wow bounceIn" data-wow-delay="0.5s" id="go" ><span class="btn-one-hd"> узнать стоимость сайта</span><span class="btn-two-hd"> узнать стоимость сайта</span></a>
 		</div>
 	</div>
 
@@ -392,6 +392,28 @@
 		</div>
 	</footer>
 	<div class="btn-up"></div>
+	
+<form class="forms" id="modal_form">
+	<h3>Оставить заявку</h3>
+		<input type="text" name="name" placeholder="Ваше имя">
+		<input type="text" name="email" placeholder="E-mail">
+		<input type="text" name="phone" placeholder="Телефон">
+		<div class="block">
+			<input type="text" name="email" placeholder="Марка и год выпуска авто">
+		    <input type="text" name="phone" placeholder="Гос. номер авто">
+		</div>
+		<div class="clear"></div>
+		<button class="send">Отправить</button>
+		<span id="modal_close"></span>
+
+</form>
+
+
+
+<div id="overlay"></div><!-- Пoдлoжкa -->
+<div id="load">
+	<hr/><hr/><hr/><hr/>
+</div>
 
 	
 
@@ -401,5 +423,6 @@
      <script type="text/javascript" src="js/js.js" ></script>
 	<script src="js/wow.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+
 </body>
 </html>
